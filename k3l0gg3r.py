@@ -16,6 +16,7 @@ print('''
 
 email = input('Enter email: ') 
 password = getpass.getpass(prompt='Password: ', stream=None)
+print('CAPTURING.............')
 server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
 server.login(email, password)
 
